@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .left {
+        left: 0;
+        /* background-color: #111; */
+        height: 70%;
+        width: 30%;
+      }
+
+      .right {
+        right: 0;
+        background-color: #049c50;
+        width: 70%;
+      }
+      .leftBottom {
+        left: 0;
+        background-color: #eaffd0;
+        height: 30%;
+        width: 30%;
+        top: 70%;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .centered img {
+        width: 150px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <i class="fa fa-4x fa-map-marker"></i>
+        <h2>Google Map</h2>
+        <p>Map Data will be here.</p>
+      </div>
+
+      <div class="split leftBottom">
+        <div class="centered">
+            <i class="fa fa-4x fa-user-plus"></i>
+          <h2>SignUp/SignIn</h2>
+          <p>Candidate will register here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <i class="fa fa-4x fa-road"></i>
+        <h2>Page Info</h2>
+        <p>Landing page data will be here.</p>
+      </div>
+    </div>
+  </body>
+</html>
